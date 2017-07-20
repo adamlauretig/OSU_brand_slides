@@ -1,0 +1,42 @@
+---
+title: "Sample Presentation"
+author: "John Doe"
+date: "7/20/2017"
+institute: "Ohio State University"
+# date: "7/19/2017"
+output: 
+#  pdf_document: default
+#  citation_package: natbib
+  beamer_presentation:
+#    incremental: true
+#    slide_level: 3
+    includes:
+      in_header: OSU_Beamer_Template_rmd.tex
+
+  # keep_tex: true
+  # fig_caption: true
+  latex_engine: pdflatex
+  html_document: default
+mainfont: Palatino
+# bibliography: prospectus_bib.bib
+biblio-style: apsr
+header-includes:
+  - \usepackage{qtree}
+  - \usepackage{tikz-qtree}
+  - \usepackage{tikz}
+  - \usepackage{palatino}
+---
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output

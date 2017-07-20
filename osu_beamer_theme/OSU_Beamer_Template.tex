@@ -1,0 +1,59 @@
+\documentclass[hyperref={pdfpagelabels=false}]{beamer}
+\let\Tiny=\tiny
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{amsmath, amsthm, amssymb, mathrsfs}
+\usepackage{epstopdf}
+\graphicspath{{./}{./eps/}}
+% these choices affect the slide layout (can be changed)
+\usetheme{Warsaw}
+\useoutertheme{infolines}
+% modifying the color theme to be scarlet-and-grey for Ohio State (don't change)
+\usecolortheme{beaver}
+\setbeamercolor{block title}{bg=red!60!black}
+\setbeamercolor{block body}{bg=gray!10!white}
+\setbeamercolor{item projected}{bg=red!75!black}
+\setbeamercolor{subitem projected}{bg=red!90!black}
+\setbeamercolor{subsubitem projected}{bg=red!90!black}
+
+% set values for the title slide: [] = text here goes in footer
+%                                 {} = text here is on title slide
+% logo can have multiple graphics, if necessary
+\title[]{Title}
+\subtitle[]{}
+\author[]{Author}
+\institute[]{The Ohio State University}
+\date{}
+\logo{\includegraphics[height=0.4cm]{OSUlogo.eps}}
+
+\begin{document}
+
+\titlepage     % creates title slide with values defined in header
+
+\section*{Outline}     % starts 'outline' section (TOC, a single slide)
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+\section{Introduction}     % each section (and subsection) title appears on TOC and at top/bottom of slide (theme-dependent)
+
+\begin{frame}{}     % frame title appears at top of slide
+
+\end{frame}
+
+
+
+\section*{References}     % use '*' on section/subsection to keep it off TOC
+
+\begin{frame}{}
+
+\end{frame}
+
+\section*{Appendix}     % extra slides in appendix, but these sections/subsections shouldn't be in TOC (use '*')
+\subsection*{}
+
+\begin{frame}{}
+\end{frame}
+
+\end{document}
